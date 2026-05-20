@@ -1,12 +1,19 @@
 h1{
-    background: steelblue;
-    color: white;
+    background: #8B4A8E;
+    color: #ffffff;
     margin: 0;
     text-align: center;
-    font-weight: normal;
+    font-weight: 900;
     text-transform: uppercase;
-    line-height: 1.1;
-    padding: 20px 0;
+    line-height: 1.2;
+    padding: 28px 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+    letter-spacing: 2px;
+    font-size: 2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    margin: 16px auto;
+    max-width: 90%;
 }
 
 body{
@@ -17,6 +24,12 @@ body{
 
 #colorDisplay{
     font-size: 200%;
+    font-weight: 900;
+    background: rgba(255,182,217,0.3);
+    padding: 8px 16px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: none;
 }
 
 .square{
@@ -26,16 +39,23 @@ body{
     padding-bottom: 30%;
     float: left;
     margin: 1.66%;
-    border-radius: 15%;
+    border-radius: 20px;
     transition: background 0.6s;
     -webkit-transition: background 0.6s;
     -moz-transition: background 0.6s;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    cursor: pointer;
 
 }
 
 #container{
-    margin: 20px auto;
+    margin: 30px auto 200px;
     max-width: 600px;
+    padding: 16px;
+    background: #2e2c30;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 16px rgba(76, 70, 70, 0.08);
 }
 
 .main-content{
@@ -56,31 +76,37 @@ body{
 #leaderboard{
     flex: 0 0 320px;
     max-width: 320px;
-    margin-left: 10;
-    margin-right: 100;
-    margin-top: 145px;
-    background: linear-gradient(180deg, #ffffff 0%, #f8f9fc 100%);
-    border-radius: 0;
-    padding: 24px;
-    box-shadow: 0 18px 40px rgba(0,0,0,0.14);
-    color: #222;
-    border: 1px solid rgba(0,0,0,0.08);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 200px;
+    background: rgba(139, 74, 142, 0.15);
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    color: #333;
+    border: 2px solid rgba(255,255,255,0.3);
     font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 #leaderboard h2{
     margin-top: 0;
     margin-bottom: 4px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-size: 1.3rem;
-    color: #0f4c81;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    color: #8B4A8E;
+    text-shadow: none;
+    font-weight: 900;
 }
 
 .help-text{
     margin: 0 0 18px;
-    color: #4a5568;
+    color: #555;
     font-size: 0.95rem;
+    text-shadow: none;
+    font-weight: 600;
 }
 
 #leaderboardList{
@@ -93,43 +119,54 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 16px;
-    border-radius: 0;
-    margin-bottom: 10px;
-    background: #eef3fb;
-    font-weight: 700;
-    color: #1d3557;
+    padding: 14px 18px;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    background: rgba(255, 224, 240, 0.4);
+    font-weight: 800;
+    color: #482954;
+    text-shadow: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 #leaderboardList li:nth-child(1){
-    background: #c9e3ff;
+    background: rgba(216, 198, 166, 0.5);
+    border: 1px solid rgba(95, 44, 44, 0.359);
 }
 
 #leaderboardList li:nth-child(2){
-    background: #dceeff;
+    background: rgba(185, 164, 128, 0.5);
+    border: 1px solid rgba(95, 44, 44, 0.359);
 }
 
 #leaderboardList li:nth-child(3){
-    background: #eef6ff;
+    background: rgba(245, 230, 211, 0.4);
+    border: 1px solid rgba(255,255,255,0.5);
 }
 
 #scoreInfo{
     display: grid;
-    gap: 10px;
+    gap: 12px;
 }
 
 #scoreInfo p{
     margin: 0;
-    font-weight: 700;
-    line-height: 1.4;
+    font-weight: 800;
+    line-height: 1.5;
+    color: #c6aeae;
+    text-shadow: none;
 }
 
 #scoreInfo label{
     display: block;
     font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 0.8px;
-    color: #5a6b7d;
+    letter-spacing: 1px;
+    color: #666;
+    font-weight: 700;
 }
 
 #playerName{
@@ -137,16 +174,19 @@ body{
     max-width: 100%;
     box-sizing: border-box;
     padding: 12px 14px;
-    border: 1px solid #cbd5e0;
-    border-radius: 0;
+    border: 2px solid rgba(139, 74, 142, 0.3);
+    border-radius: 12px;
     font-size: 1rem;
     outline: none;
-    background: #ffffff;
+    background: rgba(255,255,255,0.6);
+    color: #333;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 #playerName:focus{
-    border-color: #4f7dce;
-    box-shadow: none;
+    border-color: #8B4A8E;
+    box-shadow: 0 0 0 3px rgba(139,74,142,0.15);
 }
 
 #saveScore{
@@ -154,29 +194,37 @@ body{
     max-width: 100%;
     box-sizing: border-box;
     padding: 14px 0;
-    border-radius: 0;
-    background: #0f4c81;
-    color: white;
-    font-weight: 800;
-    letter-spacing: 1px;
+    border-radius: 12px;
+    background: #8B4A8E;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 1.2px;
     cursor: pointer;
-    transition: background 0.25s ease;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0 4px 12px rgba(139,74,142,0.25);
 }
 
 #saveScore:hover{
-    background: #0b3b67;
+    background: #7A3D7D;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(139,74,142,0.35);
 }
 
 #strip{
-    background: white;
-    color:black;
+    background: #F0E8FA;
+    color: #333;
     text-align: center;
-    padding: 10px 0;
+    padding: 14px 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 #message{
@@ -186,7 +234,7 @@ body{
 }
 .selected{
      color: white;
-    background: steelblue;
+    background: #FFB6D9;
 }
 
 button{
@@ -195,18 +243,20 @@ button{
     text-transform: uppercase;
     height: 100%;
     font-weight: 700;
-    color: steelblue;
+    color: #999;
     letter-spacing: 1px;
     font-style: inherit;
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     outline: none;
+    cursor: pointer;
 }
 
 button:hover {
     color: white;
-    background: steelblue;
+    background: #FFB6D9;
+    border-radius: 8px;
 }
 
 h3{
