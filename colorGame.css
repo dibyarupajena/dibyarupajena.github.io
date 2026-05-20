@@ -38,15 +38,145 @@ body{
     max-width: 600px;
 }
 
-/*#message{
-    color:blue;
-}*/
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 0 10px 20px;
+}
+
+.game-panel{
+    flex: 1 1 620px;
+    max-width: 620px;
+    margin-right: 0;
+}
+
+#leaderboard{
+    flex: 0 0 320px;
+    max-width: 320px;
+    margin-left: 10;
+    margin-right: 100;
+    margin-top: 145px;
+    background: linear-gradient(180deg, #ffffff 0%, #f8f9fc 100%);
+    border-radius: 0;
+    padding: 24px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.14);
+    color: #222;
+    border: 1px solid rgba(0,0,0,0.08);
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+#leaderboard h2{
+    margin-top: 0;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1.3rem;
+    color: #0f4c81;
+}
+
+.help-text{
+    margin: 0 0 18px;
+    color: #4a5568;
+    font-size: 0.95rem;
+}
+
+#leaderboardList{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 22px 0;
+}
+
+#leaderboardList li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    border-radius: 0;
+    margin-bottom: 10px;
+    background: #eef3fb;
+    font-weight: 700;
+    color: #1d3557;
+}
+
+#leaderboardList li:nth-child(1){
+    background: #c9e3ff;
+}
+
+#leaderboardList li:nth-child(2){
+    background: #dceeff;
+}
+
+#leaderboardList li:nth-child(3){
+    background: #eef6ff;
+}
+
+#scoreInfo{
+    display: grid;
+    gap: 10px;
+}
+
+#scoreInfo p{
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+#scoreInfo label{
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #5a6b7d;
+}
+
+#playerName{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e0;
+    border-radius: 0;
+    font-size: 1rem;
+    outline: none;
+    background: #ffffff;
+}
+
+#playerName:focus{
+    border-color: #4f7dce;
+    box-shadow: none;
+}
+
+#saveScore{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 14px 0;
+    border-radius: 0;
+    background: #0f4c81;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+
+#saveScore:hover{
+    background: #0b3b67;
+}
 
 #strip{
     background: white;
-    height: 25px;
     color:black;
     text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 #message{

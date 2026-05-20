@@ -5,25 +5,41 @@
     <link rel="stylesheet" type="text/css" href="colorGame.css">
 </head>
 <body>
-   <h1>The Great <br>
-    <span id="colorDisplay">RGB</span> 
-    <br>
-    Color Game</h1>
-    <div id="strip">
-        <button id="reset">New Colors</button>
-        <span id="message"></span>
-        <button id="easybtn">Easy</button>
-        <button id="hardbtn" class="selected">Hard</button>
-    </div>   
-<div id="container">
- 
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
+    <div class="main-content">
+        <div class="game-panel">
+            <h1>The Great <br>
+                <span id="colorDisplay">RGB</span> 
+                <br>
+                Color Game</h1>
+            <div id="strip">
+                <button id="reset">New Colors</button>
+                <span id="message"></span>
+                <button id="easybtn">Easy</button>
+                <button id="hardbtn" class="selected">Hard</button>
+            </div>
+            <div id="container">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </div>
+        <aside id="leaderboard">
+            <h2>Leaderboard</h2>
+            <p class="help-text">Top 5 highest scorers</p>
+            <ol id="leaderboardList"></ol>
+            <div id="scoreInfo">
+                <p>Total score: <span id="currentScore">0</span></p>
+                <p>Guesses this round: <span id="turnCount">0</span></p>
+                <p>Round points: <span id="roundPointsVal">0</span></p>
+                <label for="playerName">Name</label>
+                <input id="playerName" type="text" placeholder="Your name">
+                <button id="saveScore">Save Score</button>
+            </div>
+        </aside>
+    </div>
 <script type="text/javascript" src="colorGame.js"></script>    
-</div>
 </body>
 </html>
